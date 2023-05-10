@@ -1,4 +1,4 @@
-{% set version = '2.4.4' %}
+{% set version = "2.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Peptides_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Peptides/Peptides_{{ version }}.tar.gz
-  sha256: fc870bd9184f23e25f9a8d20c24c2f5e32aa1333ceacab6b256765a0345bf7fa
+  sha256: c13df9f092b784dfca4abb54867daf0014d3e6f8a2ac482476e22bc3f2eba2d1
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,12 +47,10 @@ test:
 about:
   home: https://github.com/dosorio/Peptides/
   license: GPL-2.0-only
-  summary: Includes functions to calculate several physicochemical properties and indices for
-    amino-acid sequences as well as to read and plot 'XVG' output files from the 'GROMACS'
-    molecular dynamics package.
+  summary: Includes functions to calculate several physicochemical properties and indices for amino-acid sequences as well as to read and plot 'XVG' output files from the 'GROMACS' molecular dynamics package.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
