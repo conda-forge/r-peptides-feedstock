@@ -3,6 +3,7 @@ About r-peptides-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-peptides-feedstock/blob/main/LICENSE.txt)
 
+
 About r-peptides
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/dosorio/Peptides/
 Package license: GPL-2.0-only
 
 Summary: Includes functions to calculate several physicochemical properties and indices for amino-acid sequences as well as to read and plot 'XVG' output files from the 'GROMACS' molecular dynamics package.
+
 About r-peptides
 ----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
